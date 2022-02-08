@@ -63,5 +63,31 @@ font-face {
 }
 
 body {
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.page-header {
+  background-color: #FFE17F;
+  color: #000000;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.second-menu-link {
+  font-family: Raleway;
+  line-height: 21px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.header-search {
+  line-height: 20px;
 }
