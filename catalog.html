@@ -3,38 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс Каталог</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
-    <header class="page-header catalog-header">
+    <header class="page-header">
       <nav class="main-navigation">
 
-        <a class="header-link" href="index.html"><img class="link-logo" src="images/footer_main_logo.svg" width="145" height="36" alt="Лого сайта девайс"></a>
+        <a class="header-link" href="#"><img class="link-logo" src="images/main_logo_black.svg" width="145" height="36" alt="Лого сайта девайс"></a>
 
         <div class="user-menu">
           <form class="header-search">
-            <label><input class="search-text" type="search" placeholder="Текст поиска">Текст поиска</label>
+            <label><input class="search-text" type="search" placeholder="Текст поиска"></label>
             <button class="search-button" type="submit">Найти</button>
           </form>
           <ul class="menu-links">
-            <li class="menu-item"><a class="login-link" href="#">Войти</a></li>
-            <li class="menu-item"><a class="compare-link" href="#">Сравнить</a></li>
-            <li class="menu-item"><a class="cart-link" href="#">Корзина</a></li>
+            <li class="menu-item"><a class="menu-link" href="#">Войти</a></li>
+            <li class="menu-item"><a class="menu-link" href="#">Сравнить</a></li>
+            <li class="menu-item"><a class="menu-link" href="#">Корзина</a></li>
           </ul>
         </div>
 
         <div class="header-second-menu">
           <ul class="second-menu-items">
-            <li class="second-menu-item"><a class="catalog-link catalog-link-current" href="catalog.html">Каталог</a></li>
+            <li class="second-menu-item"><a class="second-menu-link" href="catalog.html">Каталог</a></li>
             <li class="second-menu-item"><a class="catalog-button-link" href="#"><img src="images/catalog_button.svg" width="50" height="50" alt="Кнопка каталога"></a></li>
-            <li class="second-menu-item"><a class="delivery-link" href="#">Доставка</a></li>
-            <li class="second-menu-item"><a class="warranty-link" href="#">Гарантия</a></li>
-            <li class="second-menu-item"><a class="contacts-link" href="#">Контакты</a></li>
+            <li class="second-menu-item"><a class="second-menu-link" href="#">Доставка</a></li>
+            <li class="second-menu-item"><a class="second-menu-link" href="#">Гарантия</a></li>
+            <li class="second-menu-item"><a class="second-menu-link" href="#">Контакты</a></li>
           </ul>
         </div>
 
       </nav>
-
     </header>
 
     <main class="main-inner">
@@ -115,7 +116,7 @@
             </ul>
           </fieldset>
 
-          <button class="button" type="submit">Показать</button>
+          <button class="catalog-show-button" type="submit">Показать</button>
         </form>
 
         <div class="catalog-sorting">
@@ -201,17 +202,17 @@
         </address>
         <ul class="footer-links">
           <li class="footer-links-item">
-            <a href="#">Доставка</a>
+            <a class="footer-link" href="#">Доставка</a>
           </li>
           <li class="footer-links-item">
-            <a href="#">Гарантия</a>
+            <a class="footer-link" href="#">Гарантия</a>
           </li>
           <li class="footer-links-item">
-            <a href="#">Контакты</a>
+            <a class="footer-link" href="#">Контакты</a>
           </li>
         </ul>
         <address>
-          <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="contacts-phone-link footer-phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
       </section>
 
@@ -225,7 +226,7 @@
           </li>
           <li class="social-media-links-item">
             <a class="link-instagram" href="https://www.instagram.com/htmlacademy/">
-              <span class="visually-hidden">Инстаграм</span>
+              <span class="vissually-hidden">Инстаграм</span>
             </a>
           </li>
           <li class="social-media-links-item">
@@ -234,9 +235,8 @@
             </a>
           </li>
         </ul>
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img src="images/html_academy_logo.png" alt="логотип html фкадемии" width="115" height="33"></a>
       </section>
-
     </footer>
 
   </body>
