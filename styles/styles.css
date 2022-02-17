@@ -89,19 +89,15 @@ body {
   color: #000000;
 }
 
-a {
-  text-decoration: none;
-  color: #000000;
-}
-
 .second-menu-link, .details-link, .card-description-link,
 .delivery-term-button, .about-link, .contacts-link,
 .newsletter-button, .footer-link, .catalog-show-button,
 .add-cards-button, .pagination-link-word {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
+  text-decoration: none;
   letter-spacing: 0.2em;
   color: #000000;
 }
@@ -117,13 +113,14 @@ a {
   color: #ffffff;
 }
 
-h2, .gadget-slogan, .term-name {
-  font-family: Raleway;
+.section-title, .subscribtion-title, .gadget-slogan,
+.term-name, .main-inner-header-title {
+  font-family: Raleway, sans-serif;
   line-height: 50px;
   font-size: 50px;
 }
 
-h3 {
+h3, .contacts-subtitle {
   font-weight: 700;
   font-size: 24px;
 }
@@ -148,7 +145,7 @@ h3 {
 }
 
 .rare-gadget-delivery {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   line-height: 20px;
   font-size: 23px;
   text-transform: uppercase;
@@ -164,7 +161,6 @@ h3 {
 .contacts-phone-link {
   text-decoration: underline;
 }
-
 
 .page-footer {
   background-color: #444444;
@@ -186,7 +182,7 @@ h3 {
 }
 
 .catalog-filter-subtitle {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
@@ -198,7 +194,7 @@ h3 {
   line-height: 20px;
 }
 
-.control{
+.control {
   line-height: 19px;
   font-size: 16px;
 }
