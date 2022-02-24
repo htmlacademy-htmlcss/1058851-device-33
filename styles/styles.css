@@ -167,7 +167,8 @@ body {
 .section-title, .about-description, .transport-list,
 .contacts-description, .contacts-subtitle, .contacts-address-text,
 .contacts-schedule, .subscrription-title, .subscription-description,
-.footer-address-text, .footer-links, .social-media-links {
+.footer-address-text, .footer-links, .social-media-links,
+.catalog-filter-group, .catalog-filter-subtitle, .catalog-filter-list {
   margin: 0;
   padding: 0;
 }
@@ -293,7 +294,7 @@ body {
   background-color: #444444;
 }
 
-.subscribtion {
+.subscription {
   display: flex;
   flex-direction: column;
 }
@@ -403,4 +404,21 @@ body {
 .social-media-links {
   width: 150px;
   display: flex;
+}
+
+.catalog-products {
+  display: flex;
+}
+
+.catalog-filter {
+  width: 320px;
+}
+
+.right-column-container {
+  background-color: #ffffff;
+  flex-grow: 1;
+}
+
+.pagination {
+  background-color: #EBEBEB;
 }
