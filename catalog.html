@@ -20,14 +20,14 @@
             <button class="search-button" type="submit">Найти</button>
           </form>
           <ul class="menu-links">
-            <li class="menu-item"><a class="menu-link" href="#">Войти</a></li>
-            <li class="menu-item"><a class="menu-link" href="#">Сравнить</a></li>
-            <li class="menu-item"><a class="menu-link" href="#">Корзина</a></li>
+            <li class="menu-item"><a class="menu-link menu-link-enter" href="#">Войти</a></li>
+            <li class="menu-item"><a class="menu-link menu-link-compare" href="#">Сравнить</a></li>
+            <li class="menu-item"><a class="menu-link menu-link-basket" href="#">Корзина</a></li>
           </ul>
         </div>
 
-        <ul class="header-second-menu">
-          <li class="second-menu-item"><a class="second-menu-link" href="catalog.html">Каталог</a></li>
+        <ul class="header-second-menu catalog-second-menu">
+          <li class="second-menu-item"><a class="second-menu-link" href="catalog.html">Каталог товаров</a></li>
           <li class="second-menu-item"><a class="catalog-button-link" href="#"><img src="images/catalog_button.svg" width="50" height="50" alt="Кнопка каталога"></a></li>
           <li class="second-menu-item"><a class="second-menu-link" href="#">Доставка</a></li>
           <li class="second-menu-item"><a class="second-menu-link" href="#">Гарантия</a></li>
@@ -39,23 +39,23 @@
 
     <main class="main-inner">
       <h1 class="visually-hidden">Каталог интернет-магазина Девайс</h1>
-
+        <div class="inner-header-wrapper">
+          <header class="main-inner-header">
+            <h2 class="main-inner-header-title">Моноподы для селфи</h2>
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link" href="index.html">Главная</a>
+              </li>
+              <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
+              </li>
+              <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
+              </li>
+            </ul>
+          </header>
+        </div>
       <div class="page-container">
-        <header class="main-inner-header">
-          <h2 class="main-inner-header-title">Моноподы для селфи</h2>
-          <ul class="breadcrumbs">
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">Главная</a>
-            </li>
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
-            </li>
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
-            </li>
-          </ul>
-        </header>
-
         <section class="catalog-products">
           <h2 class="visually-hidden">Список товаров с фильтрами</h2>
 
@@ -126,12 +126,12 @@
                 <option value="popular">Популярные</option>
                 <option value="price">По цене</option>
               </select>
-              <a class="sorting-button" href="#">
+              <button class="sorting-button" type="button">
                 <span class="visually-hidden">От меньшего к большему</span>
-              </a>
-              <a class="sorting-button sorting-button-down" href="#">
+              </button>
+              <button class="sorting-button sorting-button-down" type="button">
                 <span class="visually-hidden">От большего к к меньшему</span>
-              </a>
+              </button>
             </div>
 
             <ul class="product-list">
@@ -178,11 +178,11 @@
               </li>
               <li class="pagination-item">
                 <ul class="pagination-link-numbers">
-                  <li class="pagination-link-item"><a class="pagination-link-numbers" href="#">1</a></li>
-                  <li class="pagination-link-item"><a class="pagination-link-numbers" href="#">2</a></li>
-                  <li class="pagination-link-item"><a class="pagination-link-numbers" href="#">3</a></li>
-                  <li class="pagination-link-item"><a class="pagination-link-numbers" href="#">...</a></li>
-                  <li class="pagination-link-item"><a class="pagination-link-numbers" href="#">15</a></li>
+                  <li class="pagination-link-item"><a class="pagination-link-number" href="#">1</a></li>
+                  <li class="pagination-link-item"><a class="pagination-link-number" href="#">2</a></li>
+                  <li class="pagination-link-item"><a class="pagination-link-number" href="#">3</a></li>
+                  <li class="pagination-link-item"><a class="pagination-link-number" href="#">...</a></li>
+                  <li class="pagination-link-item"><a class="pagination-link-number" href="#">15</a></li>
                 </ul>
               </li>
               <li class="pagination-item">
@@ -191,6 +191,7 @@
             </ul>
           </div>
         </section>
+      </div>
     </div>
     </main>
 
