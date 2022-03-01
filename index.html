@@ -20,14 +20,14 @@
             <button class="search-button" type="submit">Найти</button>
           </form>
           <ul class="menu-links">
-            <li class="menu-item"><a class="menu-link" href="#">Войти</a></li>
-            <li class="menu-item"><a class="menu-link" href="#">Сравнить</a></li>
-            <li class="menu-item"><a class="menu-link" href="#">Корзина</a></li>
+            <li class="menu-item"><a class="menu-link menu-link-enter" href="#">Войти</a></li>
+            <li class="menu-item"><a class="menu-link menu-link-compare" href="#">Сравнить</a></li>
+            <li class="menu-item"><a class="menu-link menu-link-basket" href="#">Корзина</a></li>
           </ul>
         </div>
 
         <ul class="header-second-menu">
-          <li class="second-menu-item"><a class="second-menu-link" href="catalog.html">Каталог</a></li>
+          <li class="second-menu-item"><a class="second-menu-link" href="catalog.html">Каталог товаров</a></li>
           <li class="second-menu-item"><a class="catalog-button-link" href="#"><img src="images/catalog_button.svg" width="50" height="50" alt="Кнопка каталога"></a></li>
           <li class="second-menu-item"><a class="second-menu-link" href="#">Доставка</a></li>
           <li class="second-menu-item"><a class="second-menu-link" href="#">Гарантия</a></li>
@@ -38,7 +38,7 @@
     </header>
 
     <main class="main-index main-container">
-      <div class="page-container">
+
 
         <h1 class="visually-hidden">Интернет-магазин гаджетов Девайс</h1>
 
@@ -64,26 +64,27 @@
               <p class="description">
                 Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
               </p>
+              <div class="pagination-wrapper">
+                <a class="details-link" href="#">Подробнее</a>
 
-              <a class="details-link" href="#">Подробнее</a>
-
-              <ol class="slider-pagination">
-                <li class="slider-pagination-item">
-                  <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                    <span class="visually-hidden">1 слайд</span>
-                  </button>
-                </li>
-                <li class="slider-pagination-item">
-                  <button class="slider-pagination-button" type="button">
-                    <span class="visually-hidden">2 слайд</span>
-                  </button>
-                </li>
-                <li class="slider-pagination-item">
-                  <button class="slider-pagination-button" type="button">
-                    <span class="visually-hidden">3 слайд</span>
-                  </button>
-                </li>
-              </ol>
+                <ol class="slider-pagination">
+                  <li class="slider-pagination-item">
+                    <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                      <span class="visually-hidden">1 слайд</span>
+                    </button>
+                  </li>
+                  <li class="slider-pagination-item">
+                    <button class="slider-pagination-button" type="button">
+                      <span class="visually-hidden">2 слайд</span>
+                    </button>
+                  </li>
+                  <li class="slider-pagination-item">
+                    <button class="slider-pagination-button" type="button">
+                      <span class="visually-hidden">3 слайд</span>
+                    </button>
+                  </li>
+                </ol>
+              </div>
 
               <ul class="gadget-advantages">
                 <li class="gadget-advantage gadget-advantage-distance">
@@ -103,54 +104,59 @@
           <h2 class="visually-hidden">Категории гаджетов</h2>
           <ul class="gadget-category-cards">
             <li class="gadget-card">
-              <a class="card-icon-link" href="#"><img src="images/vr_logo.svg" width="160" height="160" alt="очки виртуальной реальности"></a>>
+              <a class="card-icon-link" href="#"><img src="images/vr_logo.svg" width="160" height="160" alt="очки виртуальной реальности"></a>
               <a class="card-description-link" href="#">Виртуальная реальность</a>
             </li>
             <li class="gadget-card">
-              <a class="card-icon-link" href="#"><img src="images/monopod_logo.svg" width="160" height="160" alt="монопод"></a>>
+              <a class="card-icon-link" href="#"><img src="images/monopod_logo.svg" width="160" height="160" alt="монопод"></a>
               <a class="card-description-link" href="#">Моноподы для селфи</a>
             </li>
             <li class="gadget-card">
-              <a class="card-icon-link" href="#"><img src="images/action_cam_logo.svg" width="160" height="160" alt="экшн-камера"></a>>
+              <a class="card-icon-link" href="#"><img src="images/action_cam_logo.svg" width="160" height="160" alt="экшн-камера"></a>
               <a class="card-description-link" href="#">Экшн-камеры</a>
             </li>
             <li class="gadget-card">
-              <a class="card-icon-link" href="#"><img src="images/fitness_gloves_logo.svg" width="160" height="160" alt="фитнес-браслет"></a>>
+              <a class="card-icon-link" href="#"><img src="images/fitness_gloves_logo.svg" width="160" height="160" alt="фитнес-браслет"></a>
               <a class="card-description-link" href="#">Фитнес-браслеты</a>
             </li>
             <li class="gadget-card">
-              <a class="card-icon-link" href="#"><img src="images/smart_watch_logo.svg" width="160" height="160" alt="умные часы"></a>>
+              <a class="card-icon-link" href="#"><img src="images/smart_watch_logo.svg" width="160" height="160" alt="умные часы"></a>
               <a class="card-description-link" href="#">Умные часы</a>
             </li>
             <li class="gadget-card">
-              <a class="card-icon-link" href="#"><img src="images/quadcopter_logo.svg" width="160" height="160" alt="квадрокоптер"></a>>
+              <a class="card-icon-link" href="#"><img src="images/quadcopter_logo.svg" width="160" height="160" alt="квадрокоптер"></a>
               <a class="card-description-link" href="#">Квадрокоптеры</a>
             </li>
           </ul>
         </section>
 
-        <section class="delivery-terms">
-          <h2 class="visually-hidden">Условия доставки</h2>
-          <ul class="delivery-terms-list">
-            <li class="delivery-term">
-              <button class="delivery-term-button" type="button">Доставка</button>
-            </li>
-            <li class="delivery-term">
-              <button class="delivery-term-button" type="button">Гарантия</button>
-            </li>
-            <li class="delivery-term">
-              <button class="delivery-term-button" type="button">Кредит</button>
-            </li>
-          </ul>
-          <div class="terms-card">
-            <span class="term-name">Доставка</span>
-            <p class="term-description">
-              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-            </p>
-          </div>
-          <img class="term-icon" src="images/courier_logo.svg" width="136" height="164" alt="лого курьера с посылкой">
+        <div class="section-size-wrapper section-size-wrapper-delivery">
+          <section class="delivery-terms">
 
-        </section>
+            <h2 class="visually-hidden">Условия доставки</h2>
+            <div class="delivery-terms-wrapper">
+              <ul class="delivery-terms-list">
+                <li class="delivery-term">
+                  <button class="delivery-term-button" type="button">Доставка</button>
+                </li>
+                <li class="delivery-term">
+                  <button class="delivery-term-button" type="button">Гарантия</button>
+                </li>
+                <li class="delivery-term">
+                  <button class="delivery-term-button" type="button">Кредит</button>
+                </li>
+              </ul>
+            </div>
+            <div class="terms-card">
+              <span class="term-name">Доставка</span>
+              <p class="term-description">
+                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+              </p>
+            </div>
+            <img class="term-icon" src="images/courier_logo.svg" width="136" height="164" alt="лого курьера с посылкой">
+
+          </section>
+        </div>
 
         <section class="rare-gagets">
           <img class="rare-gadget-icon" src="images/rare_gadget_icon.svg" width="125" height="100" alt="иконка с грузовиком">
@@ -161,7 +167,6 @@
         <div class="contacts-wrapper">
           <section class="about">
             <h2 class="section-title">О нас</h2>
-            <div class="horizontal-line horizontal-line-about"></div>
             <p class="about-description">
               Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
             </p>
@@ -184,7 +189,6 @@
 
           <section class="contacts">
             <h2 class="section-title">Контакты</h2>
-            <div class="horizontal-line horizontal-line-contacts"></div>
             <p class="contacts-description">
               Вы можете забрать товар сами, заехав в наш офис.<br> Заодно сможете проверить работоспособность покупки.
             </p>
@@ -206,29 +210,31 @@
           </section>
         </div>
 
-        <section class="subscription">
-          <div class="subscribtion-text">
-            <h2 class="subscrription-title">Подпишитесь на рассылку</h2>
-            <p class="subscription-description">
-            Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
-            </p>
-          </div>
-          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden" for="newsletter-email">Email</label>
-            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-            <button class="button newsletter-button" type="submit">
-              <span>Подписаться</span>
-            </button>
-            <span class="newsletter-slogan">Это бесплатно</span>
-          </form>
-        </section>
-      </div>
+        <div class="section-size-wrapper section-size-wrapper-subscription">
+          <section class="subscription">
+            <div class="subscribtion-text">
+              <h2 class="subscrription-title">Подпишитесь на рассылку</h2>
+              <p class="subscription-description">
+              Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
+              </p>
+            </div>
+
+            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="visually-hidden" for="newsletter-email">Email</label>
+              <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+              <button class="button newsletter-button" type="submit">
+                <span>Подписаться</span>
+              </button>
+              <span class="newsletter-slogan">Это бесплатно</span>
+            </form>
+          </section>
+        </div>
     </main>
 
     <footer class="page-footer">
 
       <div class="footer-container">
-        <a class="footer-link" href="#"><img class="link-logo" src="images/footer_main_logo.svg" width="145" height="36" alt="Лого сайта девайс"></a>
+        <a class="footer-logo" href="#"><img class="link-logo" src="images/footer_main_logo.svg" width="145" height="36" alt="Лого сайта девайс"></a>
 
         <section class="footer-navigation">
           <address>
