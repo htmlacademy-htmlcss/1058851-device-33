@@ -178,7 +178,7 @@ body {
 }
 
 .page-container {
-    width: 1040px;
+    width: 1160px;
     margin: 0 auto;
 }
 
@@ -601,9 +601,13 @@ body {
 }
 
 .product-list {
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  column-gap: 40px;
+  row-gap: 44px;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 70px 40px 44px;
 }
 
 .catalog-filter-subtitle {
@@ -626,6 +630,8 @@ body {
 
 .card-price {
   line-height: 21px;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .add-cards-button {
@@ -719,7 +725,8 @@ body {
 }
 
 .catalog-filter {
-  width: 320px;
+  width: 260px;
+  padding-left: 60px;
 }
 
 .right-column-container {
@@ -734,4 +741,25 @@ body {
   padding: 0;
   list-style-type: none;
   background-color: #EBEBEB;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
+}
+
+.card-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.card-subtitle {
+  max-width: 226px;
+  margin: 0;
+  padding: 0;
+  margin-right: auto;
+}
+
+.catalog-card-description {
+  display: flex;
+  margin-top: 32px;
 }
