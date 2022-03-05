@@ -15,7 +15,7 @@
 
         <div class="user-menu">
           <form class="header-search">
-            <label class="visually-hidden" for="header-search-form"></label>
+            <label class="visually-hidden" for="header-search-form">Поиск</label>
             <input class="search-text" id="header-search-form" type="search" placeholder="Текст поиска">
             <button class="search-button" type="submit">Найти</button>
           </form>
@@ -136,8 +136,8 @@
             <h2 class="visually-hidden">Условия доставки</h2>
             <div class="delivery-terms-wrapper">
               <ul class="delivery-terms-list">
-                <li class="delivery-term">
-                  <button class="delivery-term-button" type="button">Доставка</button>
+                <li class="delivery-term delivery-term-active">
+                  <button class="delivery-term-button delivery-term-button-active" type="button">Доставка</button>
                 </li>
                 <li class="delivery-term">
                   <button class="delivery-term-button" type="button">Гарантия</button>
@@ -161,11 +161,12 @@
         <section class="rare-gagets">
           <img class="rare-gadget-icon" src="images/rare_gadget_icon.svg" width="125" height="100" alt="иконка с грузовиком">
           <span class="rare-gadget-delivery">Доставим редкий товар под заказ</span>
-          <button type="button"><img src="images/i_button_logo.svg" width="2" height="12" alt="редкий товар под заказ"></button>
+          <button class="rare-gadget-button" type="button"><img src="images/i_button_logo.svg" width="2" height="12" alt="редкий товар под заказ"></button>
         </section>
 
         <div class="contacts-wrapper">
           <section class="about">
+            <div class="horizontal-line"></div>
             <h2 class="section-title">О нас</h2>
             <p class="about-description">
               Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
@@ -188,6 +189,7 @@
           </section>
 
           <section class="contacts">
+            <div class="horizontal-line"></div>
             <h2 class="section-title">Контакты</h2>
             <p class="contacts-description">
               Вы можете забрать товар сами, заехав в наш офис.<br> Заодно сможете проверить работоспособность покупки.
@@ -221,7 +223,7 @@
 
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="newsletter-email">Email</label>
-              <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+              <input class="newsletter-email-field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
               <button class="button newsletter-button" type="submit">
                 <span>Подписаться</span>
               </button>
@@ -260,17 +262,17 @@
           <div class="horizontal-line horizontal-line-footer"></div>
           <ul class="social-media-links">
             <li class="social-media-links-item">
-              <a class="link-facebook" href="https://www.facebook.com/htmlacademy">
+              <a class="social-media-link link-facebook" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
             <li class="social-media-links-item">
-              <a class="link-instagram" href="https://www.instagram.com/htmlacademy/">
+              <a class="social-media-link link-instagram" href="https://www.instagram.com/htmlacademy/">
                 <span class="visually-hidden">Инстаграм</span>
               </a>
             </li>
             <li class="social-media-links-item">
-              <a class="link-twiter" href="https://twitter.com/htmlacademy_ru">
+              <a class="social-media-link link-twitter" href="https://twitter.com/htmlacademy_ru">
                 <span class="visually-hidden">Твиттер</span>
               </a>
             </li>
