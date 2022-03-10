@@ -15,8 +15,8 @@
 
         <div class="user-menu">
           <form class="header-search">
-            <label class="visually-hidden" for="header-search-form"></label>
-            <input class="search-text" id="header-search-form" type="search" placeholder="Текст поиска">
+            <label class="visually-hidden" for="header-search-form">Поиск</label>
+            <input class="search-text" id="header-search-form" type="search" placeholder="Поиск по сайту">
             <button class="search-button" type="submit">Найти</button>
           </form>
           <ul class="menu-links">
@@ -27,8 +27,11 @@
         </div>
 
         <ul class="header-second-menu catalog-second-menu">
-          <li class="second-menu-item"><a class="second-menu-link" href="catalog.html">Каталог товаров</a></li>
-          <li class="second-menu-item"><a class="catalog-button-link" href="#"><img src="images/catalog_button.svg" width="50" height="50" alt="Кнопка каталога"></a></li>
+          <li class="second-menu-item">
+            <a class="second-menu-link link-button" href="catalog.html">Каталог товаров
+              <div class="second-menu-button"></div>
+            </a>
+          </li>
           <li class="second-menu-item"><a class="second-menu-link" href="#">Доставка</a></li>
           <li class="second-menu-item"><a class="second-menu-link" href="#">Гарантия</a></li>
           <li class="second-menu-item"><a class="second-menu-link" href="#">Контакты</a></li>
@@ -60,7 +63,7 @@
           <h2 class="visually-hidden">Список товаров с фильтрами</h2>
 
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <h3 class="catalog-filter-subtitle">Фильтр:</h3>
+            <h3 class="catalog-filter-subtitle catalog-filter-subtitle-filter">Фильтр:</h3>
 
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Цвет</legend>
@@ -121,7 +124,7 @@
 
           <div class="right-column-container">
             <div class="catalog-sorting">
-              <h3 class="catalog-filter-subtitle">Сортировка:</h3>
+              <h3 class="catalog-filter-subtitle catalog-filter-subtitle-sorting">Сортировка:</h3>
               <select class="select-control">
                 <option value="popular">Популярные</option>
                 <option value="price">По цене</option>
@@ -200,7 +203,7 @@
           </div>
         </section>
       </div>
-    </div>
+
     </main>
 
     <footer class="page-footer">
@@ -232,17 +235,17 @@
           <div class="horizontal-line horizontal-line-footer"></div>
           <ul class="social-media-links">
             <li class="social-media-links-item">
-              <a class="link-facebook" href="https://www.facebook.com/htmlacademy">
+              <a class="social-media-link link-facebook" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
             <li class="social-media-links-item">
-              <a class="link-instagram" href="https://www.instagram.com/htmlacademy/">
+              <a class="social-media-link link-instagram" href="https://www.instagram.com/htmlacademy/">
                 <span class="visually-hidden">Инстаграм</span>
               </a>
             </li>
             <li class="social-media-links-item">
-              <a class="link-twiter" href="https://twitter.com/htmlacademy_ru">
+              <a class="social-media-link link-twitter" href="https://twitter.com/htmlacademy_ru">
                 <span class="visually-hidden">Твиттер</span>
               </a>
             </li>
