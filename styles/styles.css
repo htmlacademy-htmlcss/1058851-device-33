@@ -192,7 +192,6 @@ body {
   margin-left: 17px;
 }
 
-
 .second-menu-item:first-of-type:hover .second-menu-button {
   opacity: 1;
 }
@@ -519,7 +518,6 @@ body {
 .card-icon-link img {
   background-color: #FFE17F;
 }
-
 
 .card-icon-link:hover img {
   background-color:#FFC700;
