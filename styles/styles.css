@@ -728,7 +728,8 @@ body {
   border: none;
   box-sizing: border-box;
   border-bottom: 3px solid #c4c4c4;
-  padding: 0;
+  padding-left: 16px;
+  font: inherit;
  }
 
 .newsletter-email-field::placeholder {
@@ -738,8 +739,21 @@ body {
   font-weight: 400;
   margin: 0;
   color: #444444;
-  padding: 11px 0 14px 16px;
   opacity: 50%;
+}
+
+.newsletter-email-field:focus {
+  border: none;
+  background-color: #dcdcdc;
+  outline: none;
+}
+
+.newsletter-email-field:focus:invalid {
+  border-bottom: 3px solid #FF3D3D;
+}
+
+.newsletter-email-field:disabled {
+  opacity: 0.3;
 }
 
 .newsletter-button {
@@ -1049,6 +1063,19 @@ body {
   color: #000000;
 }
 
+.contacts-phone-link:hover {
+  color:#FFC700;
+}
+
+.contacts-phone-link:active {
+  color:rgba(255, 199, 0, 0.3);
+}
+
+.contacts-phone-link:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
 .page-footer {
   background-color: #444444;
 }
@@ -1239,8 +1266,6 @@ body {
   padding: 70px 40px 44px;
 }
 
-
-
 .catalog-filter-subtitle {
   font-family: Raleway, sans-serif;
   font-size: 16px;
@@ -1256,24 +1281,209 @@ body {
 
 .catalog-filter-subtitle-filter {
   padding-left: 0;
+  margin-bottom: 35px;
 }
 
+.catalog-filter-group {
+  border: none;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+}
 
+.catalog-filter-group:last-of-type {
+  margin-top: 35px;
+}
 
 .catalog-filter-title, .card-subtitle {
   font-weight: 700;
   line-height: 20px;
 }
 
+.catalog-filter-title {
+  width: 100%;
+  border-top: 2px solid #000000;
+  padding-top: 12px;
+  margin-bottom: 20px;
+}
+
+.catalog-filter-item {
+  display: flex;
+  align-items: center;
+  height: 20px;
+}
+
+.catalog-filter-item:not(:last-of-type) {
+  margin-bottom: 17.5px;
+}
+
 .control {
+  display: block;
+  position: relative;
+  padding-left: 36px;
   line-height: 19px;
   font-size: 16px;
+}
+
+.control-input {
+  margin: 0;
+}
+
+.control-mark {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #cccccc;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.control:hover {
+  opacity: 0.6;
+}
+
+.control:active {
+  opacity: 0.3;
+}
+
+.control:focus-within::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 20px;
+  height: 20px;
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.control-input:disabled + .control-mark ~ .control-label {
+  opacity: 0.1;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-image: url(../images/checkbox_on.svg);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  border:2px solid #000000;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  border-radius: 50%;
+  content: "";
+}
+
+.control-input[type="radio"]:checked + .control-mark {
+  border:2px solid #000000;
 }
 
 .card-price {
   line-height: 21px;
   font-size: 18px;
   font-weight: 400;
+}
+
+.range-scale {
+  position: relative;
+  height: 2px;
+  margin-bottom: 7px;
+  background-color: #dcdcdc;
+}
+
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: #000000;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.toggle-min {
+  top: -9px;
+  left: -9px;
+}
+
+.toggle-max {
+  top: -9px;
+  right: -9px;
+}
+
+.range-toggle:hover {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.range-toggle:active {
+  background-color: #000000;
+}
+
+.range-toggle:focus::before {
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  content: "";
+  width: 18px;
+  height: 18px;
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 39px;
+}
+
+.catalog-filter-label {
+  display: flex;
+  margin-right: 5px;
+  color: #000000;
+  opacity: 0.3;
+  transform: translateX(-20px);
+}
+
+.range-input {
+  width: 60px;
+  padding: 0 5px;
+  font: inherit;
+  text-align: start;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .add-cards-button {
