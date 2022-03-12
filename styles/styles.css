@@ -117,6 +117,7 @@ body {
 
 .header-link:focus, .footer-logo:focus  {
   outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .main-navigation {
@@ -206,6 +207,7 @@ body {
 
 .second-menu-link:focus {
   outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .device-presentation, .gadget-categories,
@@ -364,6 +366,7 @@ body {
 .menu-link-enter {
   padding: 0 0 0 27px;
   position: relative;
+  border: none;
 }
 
 .menu-link:hover {
@@ -375,7 +378,8 @@ body {
 }
 
 .menu-link:focus {
-  box-shadow: 0 0 0 2px #FFE17F, 0 0 0 4px #AF4FFF;
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .menu-item:first-of-type {
@@ -429,16 +433,44 @@ body {
 }
 
 .slider-pagination-button {
+  position: relative;
   width: 12px;
   height: 12px;
   padding: 0;
   border-radius: 50px;
   border: 2px solid #000000;
   background-color: #ffffff;
+  cursor: pointer;
+}
+
+.slider-pagination-button::before,
+.slider-pagination-button-current::before {
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  right: -2px;
+  width: 12px;
+  height: 12px;
 }
 
 .slider-pagination-button-current {
+  position: relative;
   background-color: #000000;
+}
+
+.slider-pagination-button:hover, .slider-pagination-button-current:hover {
+  opacity: 0.6;
+}
+
+.slider-pagination-button:active, .slider-pagination-button-current:active {
+  opacity: 0.3;
+}
+
+.slider-pagination-button:focus::before,
+.slider-pagination-button-current:focus::before {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+  z-index: 3;
 }
 
 .menu-link-basket::before {
@@ -483,8 +515,46 @@ body {
 }
 
 .slider {
+  position: relative;
   margin-top: -120px;
 }
+
+.slider-button {
+  width: 20px;
+  height: 60px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  background-image: url(../images/slider_button_arrow.png);
+  cursor: pointer;
+}
+
+.slider-button:hover {
+  opacity: 0.6;
+}
+
+.slider-button:active {
+  opacity: 0.3;
+}
+
+.slider-button:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.slider-next {
+  transform: rotate(180deg);
+}
+
+.slider-button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 211px;
+  right: 0;
+  width: 530px;
+}
+
 
 .gadget-categories {
   margin-bottom: 70px;
@@ -529,6 +599,7 @@ body {
 
 .card-icon-link:focus {
   outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .card-description {
@@ -581,6 +652,7 @@ body {
 
 .details-link:focus {
   outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .details-link:disabled {
@@ -626,6 +698,7 @@ body {
 
 .delivery-term-button-active:focus {
   outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .delivery-term-active {
@@ -684,6 +757,7 @@ body {
 
 .newsletter-button:focus {
   outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .newsletter-button:disabled {
@@ -852,6 +926,7 @@ body {
 
 .rare-gadget-button:focus {
   outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .section-size-wrapper, .rare-gadgets {
@@ -935,6 +1010,7 @@ body {
 
 .about-link:focus, .contacts-link:focus {
   outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .about-link:disabled, .contacts-link:disabled {
@@ -1036,6 +1112,7 @@ body {
 
 .footer-link:focus {
   outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .breadcrumbs {
@@ -1063,6 +1140,7 @@ body {
 
 .breadcrumbs-link:focus, .select-control:focus {
   outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .breadcrumbs-item {
@@ -1123,6 +1201,7 @@ body {
 
 .sorting-button:focus {
   outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
   z-index: 2;
 }
 
@@ -1218,6 +1297,7 @@ body {
 
 .add-cards-button:focus {
   outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .pagination-link-numbers {
@@ -1257,6 +1337,7 @@ body {
 
 .pagination-link-number:focus {
   outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .pagination-link-item {
@@ -1280,6 +1361,7 @@ body {
 
 .pagination-link-word:focus {
   outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .footer-container {
@@ -1315,6 +1397,7 @@ body {
 
 .footer-phone-link:active {
   outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .footer-links {
@@ -1394,6 +1477,7 @@ body {
 
 .htmlacademy-link:focus {
   outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 /*catalog*/
@@ -1409,6 +1493,7 @@ body {
   width: 220px;
   border: none;
   cursor: pointer;
+  background-color: inherit;
   margin-top: 36.5px;
   z-index: 1;
   padding: 9.5px 0;
@@ -1428,6 +1513,7 @@ body {
 
 .catalog-show-button:focus {
   outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .catalog-show-button:disabled {
@@ -1528,6 +1614,7 @@ body {
 
 .card-link:focus {
   outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
   z-index: 2;
 }
 
