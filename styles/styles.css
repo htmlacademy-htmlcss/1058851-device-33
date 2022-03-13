@@ -671,6 +671,10 @@ body {
   z-index: -1;
 }
 
+.term-icon {
+  margin-top: 72.5px;
+}
+
 .delivery-term-button {
   width: 160px;
   padding: 0;
@@ -1873,4 +1877,314 @@ body {
 .catalog-card-description {
   display: flex;
   margin-top: 32px;
+}
+
+/*modal window*/
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(240, 240, 240, 0.9);
+  z-index: 5;
+}
+
+.modal-container-closed {
+  display: none;
+}
+
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 72px 80px;
+  background-color: #ffffff;
+}
+
+
+.modal-delivery {
+  width: 760px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 84px;
+  right: 80px;
+  width: 26px;
+  height: 26px;
+  background-color: #ffffff;
+  border: none;
+  background-image: url("/images/close_cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-close-button:hover {
+  opacity: 0.6;
+}
+
+.modal-close-button:active {
+  opacity: 0.3;
+}
+
+.modal-close-button:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 42px;
+  font-family: Raleway, sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.delivery-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 42px;
+}
+
+.field-group:first-of-type {
+  width: 360px;
+}
+
+.field-group:nth-of-type(2) {
+  width: 360px;
+  margin-left: 40px;
+}
+
+.field-group:nth-of-type(3) {
+  width: 540px;
+
+}
+
+.field-group:last-of-type {
+  width: 180px;
+  margin-left: 40px;
+}
+
+.field-group label {
+  font-family: Rubik, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  padding-bottom: 14px;
+}
+
+.field {
+  font-family: Rubik, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 1);
+
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color:#F0F0F0;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 35px;
+}
+
+.field::placeholder {
+  font-family: Rubik, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.field-group {
+  position: relative;
+}
+
+.field-group:nth-of-type(2):after {
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  content: "";
+  width: 15px;
+  height: 12px;
+  background-image: url(../images/envelope.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.field-group:first-of-type:after {
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  content: "";
+  width: 13px;
+  height: 12px;
+  background-image: url(../images/modal_name_icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.field-group span {
+  font-family: Rubik, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.field:hover {
+  background-color: #DCDCDC;
+}
+
+.field:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.email-field:focus:invalid {
+  border: 2px solid #FF3D3D;
+  box-sizing: border-box;
+}
+
+.email-field:focus:invalid + span {
+  color: #FF3D3D;
+}
+
+.quantity-field::-webkit-outer-spin-button,
+.quantity-field::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.field-group:last-of-type label::after {
+  position: absolute;
+  right: 33px;
+  top: -3px;
+  content: "";
+  width: 26px;
+  height: 26px;
+  background-image: url(../images/modai_i.svg);
+  background-color: #FFE17F;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.quantity-field {
+  width: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
+  align-self: center;
+  text-align: center;
+}
+
+.quantity-field:active, .quantity-field:focus {
+  outline: none;
+}
+
+.quantity-field:active:invalid {
+  outline: 2px solid #FF3D3D;
+}
+
+
+.quantity-field::placeholder {
+  text-align: center;
+}
+
+.delivery-button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 60px;
+  height: 60px;
+  border: none;
+  padding: 0;
+  background-color: #F0F0F0;
+  cursor: pointer;
+}
+
+.delivery-button:hover svg {
+  fill: rgba(0, 0, 0, 0.6);
+}
+
+.delivery-button:active svg{
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.delivery-button:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.delivery-button-less {
+  right: 200px;
+  bottom: 154px;
+}
+
+.delivery-button-more {
+  right: 80px;
+  bottom: 154px;
+}
+
+.delivery-form-button {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+  color: #000000;
+
+
+  position: relative;
+  width: 200px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  z-index: 1;
+}
+
+.delivery-form-button::before {
+  right: 0;
+  top: 15.5px;
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 8px;
+  background-color: #FFE17F;
+  z-index: -1;
+}
+
+.delivery-form-button:hover {
+  background-color: #FFE17F;
+}
+
+.delivery-form-button:active, .delivery-form-button:active::before {
+  background-color: #FFCC33;
+}
+
+.delivery-form-button:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
