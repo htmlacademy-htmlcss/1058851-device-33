@@ -685,6 +685,19 @@ body {
   cursor: pointer;
 }
 
+.delivery-term-button:hover {
+  background-color: #FFE17F;
+}
+
+.delivery-term-button:active {
+  background-color: #FFCC33;
+}
+
+.delivery-term-button:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
 .delivery-term-button-active {
   color:#FFE17F;
   min-width: 280px;
@@ -1907,6 +1920,8 @@ body {
 
 .modal-delivery {
   width: 760px;
+  border: 10px solid #000000;
+  box-shadow: 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .modal-close-button {
@@ -2057,6 +2072,10 @@ body {
 .field:focus {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
+}
+
+.field:disabled {
+  opacity: 0.3;
 }
 
 .email-field:focus:invalid {
