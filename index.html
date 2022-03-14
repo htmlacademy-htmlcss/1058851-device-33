@@ -22,7 +22,57 @@
           <ul class="menu-links">
             <li class="menu-item"><a class="menu-link menu-link-enter" href="#">Войти</a></li>
             <li class="menu-item"><a class="menu-link menu-link-compare" href="#">Сравнить</a></li>
-            <li class="menu-item"><a class="menu-link menu-link-basket" href="#">Корзина</a></li>
+            <li class="menu-item">
+              <a class="menu-link menu-link-cart" href="#">Корзина</a>
+
+              <div class="popover popocer-cart">
+                <div class="popover-triangle"></div>
+                <div class="popover-content">
+                  <h2 class="visually-hidden">Корзина</h2>
+                  <ul class="cart-items">
+                    <li class="cart-item">
+                      <a href="#" class="card-item-link">
+                        <img class="cart-item-image" src="/images/amateur_selfie_stick.jpg" alt="изображение товара" width="39px" height="43px">
+                        <p class="cart-item-name">Любительская селфи-палка</p>
+                      </a>
+                      <button class="cart-item-delete-button">
+                        <span class="visually-hidden">кнопка удаления товара из корзины</span>
+                        <svg width="10" height="11" viewBox="0 0 10 11" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                          <path d="m10 1.687-.91-.91L5 4.87.91.778 0 1.687l4.09 4.09L0 9.87l.91.909L5 6.687l4.09 4.09.91-.908-4.09-4.091L10 1.687Z"/>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="cart-item">
+                      <a href="#" class="card-item-link">
+                        <img class="cart-item-image" src="/images/professional_selfie_stick.jpg" alt="изображение товара" width="39px" height="43px">
+                        <p class="cart-item-name">Профессиональная
+                          селфи-палка</p>
+                      </a>
+                      <button class="cart-item-delete-button">
+                        <span class="visually-hidden">кнопка удаления товара из корзины</span>
+                        <svg width="10" height="11" viewBox="0 0 10 11" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                          <path d="m10 1.687-.91-.91L5 4.87.91.778 0 1.687l4.09 4.09L0 9.87l.91.909L5 6.687l4.09 4.09.91-.908-4.09-4.091L10 1.687Z"/>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
+                  <ul class="cart-summary">
+                    <li class="cart-summary-item">
+                      <p class="cart-summary-item-name">Товаров:</p>
+                      <p class="cart-summary-item-value">2</p>
+                    </li>
+                    <li class="cart-summary-item">
+                      <p class="cart-summary-item-name">Сумма:</p>
+                      <p class="cart-summary-item-value">2000 ₽</p>
+                    </li>
+                  </ul>
+                  <button class="cart-open-button">
+                    Открыть корзину
+                  </button>
+                </div>
+              </div>
+
+            </li>
           </ul>
         </div>
 
@@ -448,6 +498,7 @@
         </section>
       </div>
     </footer>
+
     <div class="modal-container modal-container-closed">
       <div class="modal modal-delivery">
         <button class="modal-close-button">
