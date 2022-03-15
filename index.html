@@ -520,7 +520,7 @@
             </p>
             <p class="field-group">
               <label for="delivery-product">Что нужно привезти:</label>
-              <input disabled class="product-field field" type="text" id="delivery-product" name="delivery-product" placeholder="В свободной форме">
+              <input class="product-field field" type="text" id="delivery-product" name="delivery-product" placeholder="В свободной форме">
             </p>
             <p class="field-group">
               <span class="form-label">
@@ -535,7 +535,7 @@
                     к провозу багажа.</span>
                 </span>
               </span>
-              <input class="quantity-field field" type="number" id="delivery-quantity" name="delivery-quantity" placeholder="1">
+              <input class="quantity-field field" type="number" min="1" max="99" id="delivery-quantity" name="delivery-quantity" placeholder="1">
             </p>
             <button class="delivery-button delivery-button-less">
               <svg width="16" height="2" viewBox="0 0 16 2" fill="#000" xmlns="http://www.w3.org/2000/svg">

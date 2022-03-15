@@ -2169,11 +2169,16 @@ body {
   margin-top: 4px;
 }
 
-.quantity-field:active, .quantity-field:focus {
+.quantity-field:active {
   outline: none;
 }
 
-.quantity-field:active:invalid {
+.quantity-field:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.quantity-field:focus:invalid {
   outline: 2px solid #FF3D3D;
 }
 
