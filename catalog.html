@@ -11,7 +11,7 @@
     <header class="page-header">
       <nav class="main-navigation">
 
-        <a class="header-link" href="#"><img class="link-logo" src="images/main_logo_black.svg" width="145" height="36" alt="Лого сайта девайс"></a>
+        <a class="header-link" href="index.html"><img class="link-logo" src="images/main_logo_black.svg" width="145" height="36" alt="Лого сайта девайс"></a>
 
         <div class="user-menu">
           <form class="header-search">
@@ -22,15 +22,79 @@
           <ul class="menu-links">
             <li class="menu-item"><a class="menu-link menu-link-enter" href="#">Войти</a></li>
             <li class="menu-item"><a class="menu-link menu-link-compare" href="#">Сравнить</a></li>
-            <li class="menu-item"><a class="menu-link menu-link-basket" href="#">Корзина</a></li>
+            <li class="menu-item">
+              <a class="menu-link menu-link-cart" href="#">Корзина</a>
+
+              <div class="popover popover-cart">
+                <div class="popover-triangle"></div>
+                <div class="popover-content">
+                  <h2 class="visually-hidden">Корзина</h2>
+                  <ul class="cart-items">
+                    <li class="cart-item">
+                      <a href="#" class="card-item-link">
+                        <img class="cart-item-image" src="/images/amateur_selfie_stick.jpg" alt="изображение товара" width="39" height="43">
+                        <p class="cart-item-name">Любительская селфи-палка</p>
+                      </a>
+                      <button class="cart-item-delete-button">
+                        <span class="visually-hidden">кнопка удаления товара из корзины</span>
+                        <svg width="10" height="11" viewBox="0 0 10 11" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                          <path d="m10 1.687-.91-.91L5 4.87.91.778 0 1.687l4.09 4.09L0 9.87l.91.909L5 6.687l4.09 4.09.91-.908-4.09-4.091L10 1.687Z"/>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="cart-item">
+                      <a href="#" class="card-item-link">
+                        <img class="cart-item-image" src="/images/professional_selfie_stick.jpg" alt="изображение товара" width="39" height="43">
+                        <p class="cart-item-name">Профессиональная
+                          селфи-палка</p>
+                      </a>
+                      <button class="cart-item-delete-button">
+                        <span class="visually-hidden">кнопка удаления товара из корзины</span>
+                        <svg width="10" height="11" viewBox="0 0 10 11" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                          <path d="m10 1.687-.91-.91L5 4.87.91.778 0 1.687l4.09 4.09L0 9.87l.91.909L5 6.687l4.09 4.09.91-.908-4.09-4.091L10 1.687Z"/>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
+                  <ul class="cart-summary">
+                    <li class="cart-summary-item">
+                      <p class="cart-summary-item-name">Товаров:</p>
+                      <p class="cart-summary-item-value">2</p>
+                    </li>
+                    <li class="cart-summary-item">
+                      <p class="cart-summary-item-name">Сумма:</p>
+                      <p class="cart-summary-item-value">2000 ₽</p>
+                    </li>
+                  </ul>
+                  <button class="cart-open-button">
+                    Открыть корзину
+                  </button>
+                </div>
+              </div>
+
+            </li>
           </ul>
         </div>
 
         <ul class="header-second-menu">
           <li class="second-menu-item">
-            <a class="second-menu-link link-button" href="catalog.html">Каталог товаров
+            <a class="second-menu-link link-button" href="#">Каталог товаров
               <div class="second-menu-button"></div>
             </a>
+            <ul class="subcatalog">
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="#">Виртуальная реальность</a>
+                <a class="subcatalog-link" href="#">Моноподы для селфи</a>
+                <a class="subcatalog-link" href="#">Экшн-камеры</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="#">Фитнес-браслеты</a>
+                <a class="subcatalog-link" href="#">Умные часы</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
           </li>
           <li class="second-menu-item"><a class="second-menu-link" href="#">Доставка</a></li>
           <li class="second-menu-item"><a class="second-menu-link" href="#">Гарантия</a></li>
@@ -242,7 +306,7 @@
     <footer class="page-footer">
 
       <div class="footer-container">
-        <a class="footer-logo" href="#"><img class="link-logo" src="images/footer_main_logo.svg" width="145" height="36" alt="Лого сайта девайс"></a>
+        <a class="footer-logo" href="index.html"><img class="link-logo" src="images/footer_main_logo.svg" width="145" height="36" alt="Лого сайта девайс"></a>
 
         <section class="footer-navigation">
           <address>
@@ -270,21 +334,21 @@
             <li class="social-media-links-item">
               <a class="social-media-link link-facebook" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Фейсбук</span>
-                <img src="../images/facebook_logo.png" alt="фейсбук" width="9px" height="18px">
+                <img src="/images/facebook_logo.png" alt="фейсбук" width="9" height="18">
                 <div class="social-outline-wrapper"></div>
               </a>
             </li>
             <li class="social-media-links-item">
               <a class="social-media-link link-instagram" href="https://www.instagram.com/htmlacademy/">
                 <span class="visually-hidden">Инстаграм</span>
-                <img src="../images/instagram_logo.png" alt="инстаграм" width="16px" height="16px">
+                <img src="/images/instagram_logo.png" alt="инстаграм" width="16" height="16">
                 <div class="social-outline-wrapper"></div>
               </a>
             </li>
             <li class="social-media-links-item">
               <a class="social-media-link link-twitter" href="https://twitter.com/htmlacademy_ru">
                 <span class="visually-hidden">Твиттер</span>
-                <img src="../images/twitter_logo.svg" alt="твиттер" width="15px" height="14px">
+                <img src="/images/twitter_logo.svg" alt="твиттер" width="15" height="14">
                 <div class="social-outline-wrapper"></div>
               </a>
             </li>
