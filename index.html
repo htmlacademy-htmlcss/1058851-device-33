@@ -22,15 +22,79 @@
           <ul class="menu-links">
             <li class="menu-item"><a class="menu-link menu-link-enter" href="#">Войти</a></li>
             <li class="menu-item"><a class="menu-link menu-link-compare" href="#">Сравнить</a></li>
-            <li class="menu-item"><a class="menu-link menu-link-basket" href="#">Корзина</a></li>
+            <li class="menu-item">
+              <a class="menu-link menu-link-cart" href="#">Корзина</a>
+
+              <div class="popover popover-cart">
+                <div class="popover-triangle"></div>
+                <div class="popover-content">
+                  <h2 class="visually-hidden">Корзина</h2>
+                  <ul class="cart-items">
+                    <li class="cart-item">
+                      <a href="#" class="card-item-link">
+                        <img class="cart-item-image" src="/images/amateur_selfie_stick.jpg" alt="изображение товара" width="39" height="43">
+                        <p class="cart-item-name">Любительская селфи-палка</p>
+                      </a>
+                      <button class="cart-item-delete-button">
+                        <span class="visually-hidden">кнопка удаления товара из корзины</span>
+                        <svg width="10" height="11" viewBox="0 0 10 11" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                          <path d="m10 1.687-.91-.91L5 4.87.91.778 0 1.687l4.09 4.09L0 9.87l.91.909L5 6.687l4.09 4.09.91-.908-4.09-4.091L10 1.687Z"/>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="cart-item">
+                      <a href="#" class="card-item-link">
+                        <img class="cart-item-image" src="/images/professional_selfie_stick.jpg" alt="изображение товара" width="39" height="43">
+                        <p class="cart-item-name">Профессиональная
+                          селфи-палка</p>
+                      </a>
+                      <button class="cart-item-delete-button">
+                        <span class="visually-hidden">кнопка удаления товара из корзины</span>
+                        <svg width="10" height="11" viewBox="0 0 10 11" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                          <path d="m10 1.687-.91-.91L5 4.87.91.778 0 1.687l4.09 4.09L0 9.87l.91.909L5 6.687l4.09 4.09.91-.908-4.09-4.091L10 1.687Z"/>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
+                  <ul class="cart-summary">
+                    <li class="cart-summary-item">
+                      <p class="cart-summary-item-name">Товаров:</p>
+                      <p class="cart-summary-item-value">2</p>
+                    </li>
+                    <li class="cart-summary-item">
+                      <p class="cart-summary-item-name">Сумма:</p>
+                      <p class="cart-summary-item-value">2000 ₽</p>
+                    </li>
+                  </ul>
+                  <button class="cart-open-button">
+                    Открыть корзину
+                  </button>
+                </div>
+              </div>
+
+            </li>
           </ul>
         </div>
 
         <ul class="header-second-menu">
           <li class="second-menu-item">
-            <a class="second-menu-link link-button" href="catalog.html">Каталог товаров
+            <a class="second-menu-link link-button" href="#">Каталог товаров
               <div class="second-menu-button"></div>
             </a>
+            <ul class="subcatalog">
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="#">Виртуальная реальность</a>
+                <a class="subcatalog-link" href="#">Моноподы для селфи</a>
+                <a class="subcatalog-link" href="#">Экшн-камеры</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="#">Фитнес-браслеты</a>
+                <a class="subcatalog-link" href="#">Умные часы</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
           </li>
           <li class="second-menu-item"><a class="second-menu-link" href="#">Доставка</a></li>
           <li class="second-menu-item"><a class="second-menu-link" href="#">Гарантия</a></li>
@@ -46,18 +110,21 @@
         <h1 class="visually-hidden">Интернет-магазин гаджетов Девайс</h1>
 
         <section class="device-presentation">
-          <h2 class="visually-hidden">Презентация гаджетов</h2>
-          <span class="slide">01</span>
-
+          <div class="device-presentation-background-wrapper">
+            <h2 class="visually-hidden">Презентация гаджетов</h2>
+            <div class="slide">01</div>
+          </div>
           <div class="presentation-wrapper">
             <div class="slider">
               <img src="images/quadqopter.png" width="560" height="560" alt="квадрокоптер">
-              <button class="slider-button slider-prev" type="button">
-                <span class="visually-hidden">Предыдущий гаджет</span>
-              </button>
-              <button class="slider-button slider-next" type="button">
-                <span class="visually-hidden">Следующий гаджет</span>
-              </button>
+              <div class="slider-button-wrapper">
+                <button class="slider-button slider-prev" type="button">
+                  <span class="visually-hidden">Предыдущий гаджет</span>
+                </button>
+                <button class="slider-button slider-next" type="button">
+                  <span class="visually-hidden">Следующий гаджет</span>
+                </button>
+              </div>
             </div>
 
             <div class="gadget-description">
@@ -103,37 +170,163 @@
           </div>
         </section>
 
+        <section class="device-presentation">
+          <div class="device-presentation-background-wrapper">
+            <h2 class="visually-hidden">Презентация гаджетов</h2>
+            <div class="slide">02</div>
+          </div>
+          <div class="presentation-wrapper">
+            <div class="slider">
+              <img src="images/fitness_gloves.png" width="560" height="560" alt="фитнес браслет">
+              <div class="slider-button-wrapper">
+                <button class="slider-button slider-prev" type="button">
+                  <span class="visually-hidden">Предыдущий гаджет</span>
+                </button>
+                <button class="slider-button slider-next" type="button">
+                  <span class="visually-hidden">Следующий гаджет</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="gadget-description">
+              <p class="gadget-slogan">
+                Худеем<br> правильно!
+              </p>
+              <p class="description">
+                Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+              </p>
+              <div class="pagination-wrapper">
+                <a class="details-link" href="#">Подробнее</a>
+
+                <ol class="slider-pagination">
+                  <li class="slider-pagination-item">
+                    <button class="slider-pagination-button" type="button">
+                      <span class="visually-hidden">1 слайд</span>
+                    </button>
+                  </li>
+                  <li class="slider-pagination-item">
+                    <button class="slider-pagination-button slider-pagination-button-current"  type="button">
+                      <span class="visually-hidden">2 слайд</span>
+                    </button>
+                  </li>
+                  <li class="slider-pagination-item">
+                    <button class="slider-pagination-button" type="button">
+                      <span class="visually-hidden">3 слайд</span>
+                    </button>
+                  </li>
+                </ol>
+              </div>
+
+              <ul class="gadget-advantages">
+                <li class="gadget-advantage gadget-advantage-distance">
+                  <span class="value">48 часов</span>
+                  <span class="parameter">Без подзарядки</span>
+                </li>
+                <li class="gadget-advantage gadget-advantage-radius">
+                  <span class="value"></span>
+                  <span class="parameter"></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="device-presentation">
+          <div class="device-presentation-background-wrapper">
+            <h2 class="visually-hidden">Презентация гаджетов</h2>
+            <div class="slide">03</div>
+          </div>
+          <div class="presentation-wrapper">
+            <div class="slider">
+              <img src="images/selfie_stick.png" width="560" height="560" alt="палка для селфи">
+              <div class="slider-button-wrapper">
+                <button class="slider-button slider-prev" type="button">
+                  <span class="visually-hidden">Предыдущий гаджет</span>
+                </button>
+                <button class="slider-button slider-next" type="button">
+                  <span class="visually-hidden">Следующий гаджет</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="gadget-description">
+              <p class="gadget-slogan">
+                Делай селфи,<br> как Бен Стиллер!
+              </p>
+              <p class="description">
+                Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+              </p>
+              <div class="pagination-wrapper">
+                <a class="details-link" href="#">Подробнее</a>
+
+                <ol class="slider-pagination">
+                  <li class="slider-pagination-item">
+                    <button class="slider-pagination-button" type="button">
+                      <span class="visually-hidden">1 слайд</span>
+                    </button>
+                  </li>
+                  <li class="slider-pagination-item">
+                    <button class="slider-pagination-button" type="button">
+                      <span class="visually-hidden">2 слайд</span>
+                    </button>
+                  </li>
+                  <li class="slider-pagination-item">
+                    <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                      <span class="visually-hidden">3 слайд</span>
+                    </button>
+                  </li>
+                </ol>
+              </div>
+
+              <ul class="gadget-advantages">
+                <li class="gadget-advantage gadget-advantage-distance">
+                  <span class="value">8,5 м</span>
+                  <span class="parameter">Длина палки</span>
+                </li>
+                <li class="gadget-advantage gadget-advantage-radius">
+                  <span class="value">5 кг</span>
+                  <span class="parameter">Вес палки</span>
+                </li>
+                <li class="gadget-advantage gadget-advantage-distance">
+                  <span class="value">Карбон</span>
+                  <span class="parameter">Материал</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
         <section class="gadget-categories">
           <h2 class="visually-hidden">Категории гаджетов</h2>
           <ul class="gadget-category-cards">
             <li class="gadget-card">
               <a class="card-icon-link" href="#"><img src="images/vr_logo.svg" width="160" height="160" alt="очки виртуальной реальности">
-                <span class="card-description" href="#">Виртуальная реальность</span>
+                <span class="card-description">Виртуальная реальность</span>
               </a>
             </li>
             <li class="gadget-card">
               <a class="card-icon-link" href="#"><img src="images/monopod_logo.svg" width="160" height="160" alt="монопод">
-                <span class="card-description" href="#">Моноподы для селфи</span>
+                <span class="card-description">Моноподы для селфи</span>
               </a>
             </li>
             <li class="gadget-card">
               <a class="card-icon-link" href="#"><img src="images/action_cam_logo.svg" width="160" height="160" alt="Экшн-камера">
-                <span class="card-description" href="#">Экшн-камеры</span>
+                <span class="card-description">Экшн-камеры</span>
               </a>
             </li>
             <li class="gadget-card">
               <a class="card-icon-link" href="#"><img src="images/fitness_gloves_logo.svg" width="160" height="160" alt="фитнес-браслет">
-                <span class="card-description" href="#">Фитнес-браслеты</span>
+                <span class="card-description">Фитнес-браслеты</span>
               </a>
             </li>
             <li class="gadget-card">
               <a class="card-icon-link" href="#"><img src="images/smart_watch_logo.svg" width="160" height="160" alt="умные часы">
-                <span class="card-description" href="#">Умные часы</span>
+                <span class="card-description">Умные часы</span>
               </a>
             </li>
             <li class="gadget-card">
               <a class="card-icon-link" href="#"><img src="images/quadcopter_logo.svg" width="160" height="160" alt="квадрокоптер">
-                <span class="card-description" href="#">Квадрокоптер</span>
+                <span class="card-description">Квадрокоптер</span>
               </a>
             </li>
           </ul>
@@ -168,13 +361,13 @@
         </div>
 
         <section class="rare-gadgets">
-
+          <h2 class="visually-hidden">Доставка редких гаджетов</h2>
           <button class="rare-gadget-button" type="button">
-            <div class="rare-gadget-icon"></div>
+            <span class="rare-gadget-icon"></span>
             <span class="rare-gadget-delivery">Доставим редкий товар под заказ</span>
-            <div class="rare-gadget-info">
-              <img class="rare-gadget-info-icon" src="images/info_icon.svg" alt="информация" width="2px" height="12px">
-            </div>
+            <span class="rare-gadget-info">
+              <img class="rare-gadget-info-icon" src="images/info_icon.svg" alt="информация" width="2" height="12">
+            </span>
           </button>
         </section>
 
@@ -253,6 +446,7 @@
         <a class="footer-logo" href="#"><img class="link-logo" src="images/footer_main_logo.svg" width="145" height="36" alt="Лого сайта девайс"></a>
 
         <section class="footer-navigation">
+          <h2 class="visually-hidden">Контакная информация и ссылки доставки, гарантии </h2>
           <address>
             <p class="footer-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           </address>
@@ -273,26 +467,27 @@
         </section>
 
         <section class="footer-social">
+          <h2 class="visually-hidden">Ссылки на социальные сети и сайт</h2>
           <div class="horizontal-line horizontal-line-footer"></div>
           <ul class="social-media-links">
             <li class="social-media-links-item">
               <a class="social-media-link link-facebook" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Фейсбук</span>
-                <img src="/images/facebook_logo.png" alt="фейсбук" width="9px" height="18px">
+                <img src="/images/facebook_logo.png" alt="фейсбук" width="9" height="18">
                 <div class="social-outline-wrapper"></div>
               </a>
             </li>
             <li class="social-media-links-item">
               <a class="social-media-link link-instagram" href="https://www.instagram.com/htmlacademy/">
                 <span class="visually-hidden">Инстаграм</span>
-                <img src="/images/instagram_logo.png" alt="инстаграм" width="16px" height="16px">
+                <img src="/images/instagram_logo.png" alt="инстаграм" width="16" height="16">
                 <div class="social-outline-wrapper"></div>
               </a>
             </li>
             <li class="social-media-links-item">
               <a class="social-media-link link-twitter" href="https://twitter.com/htmlacademy_ru">
                 <span class="visually-hidden">Твиттер</span>
-                <img src="/images/twitter_logo.svg" alt="твиттер" width="15px" height="14px">
+                <img src="/images/twitter_logo.svg" alt="твиттер" width="15" height="14">
                 <div class="social-outline-wrapper"></div>
               </a>
             </li>
@@ -305,6 +500,63 @@
         </section>
       </div>
     </footer>
+
+    <div class="modal-container modal-container-closed">
+      <div class="modal modal-delivery">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+
+          <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label for="delivery-name">Ваше имя:</label>
+              <input class="name-field field" type="text" id="delivery-name" name="delivery-name" placeholder="Введите имя">
+              <span class="field-note">Добавьте имя</span>
+            </p>
+            <p class="field-group">
+              <label for="delivery-email">Ваш e-mail:</label>
+              <input class="email-field field" type="email" id="delivery-email" name="delivery-email" placeholder="почта">
+              <span class="field-note">Забавный у вас адрес</span>
+            </p>
+            <p class="field-group">
+              <label for="delivery-product">Что нужно привезти:</label>
+              <input class="product-field field" type="text" id="delivery-product" name="delivery-product" placeholder="В свободной форме">
+            </p>
+            <p class="field-group">
+              <span class="form-label">
+                <label class="form-label form-label-icon" for="delivery-quantity">Количество:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <svg class="tooltip-icon" width="2" height="12" viewBox="0 0 2 12" fill="#000" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z"/>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                    к провозу багажа.</span>
+                </span>
+              </span>
+              <input class="quantity-field field" type="number" min="1" max="99" id="delivery-quantity" name="delivery-quantity" placeholder="1">
+            </p>
+            <button class="delivery-button delivery-button-less">
+              <svg width="16" height="2" viewBox="0 0 16 2" fill="#000" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 0H0v2h16V0Z"/>
+              </svg>
+            </button>
+            <button class="delivery-button delivery-button-more">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="#000" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z"/>
+              </svg>
+            </button>
+            <button class="delivery-form-button" type="submit">
+              Отправить
+            </button>
+
+          </form>
+        </section>
+      </div>
+    </div>
 
   </body>
 </html>
