@@ -2124,7 +2124,7 @@ body {
 
 }
 
-.field-group span {
+.field-note {
   font-family: Rubik, sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -2160,26 +2160,13 @@ body {
   margin: 0;
 }
 
-.field-group:last-of-type label::after {
-  position: absolute;
-  right: 33px;
-  top: -3px;
-  content: "";
-  width: 26px;
-  height: 26px;
-  background-image: url(../images/modai_i.svg);
-  background-color: #FFE17F;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
-}
-
 .quantity-field {
   width: 60px;
   padding-left: 60px;
   padding-right: 60px;
   align-self: center;
   text-align: center;
+  margin-top: 4px;
 }
 
 .quantity-field:active, .quantity-field:focus {
@@ -2275,6 +2262,70 @@ body {
   outline-offset: 2px;
 }
 
+/*modal tooltip*/
+
+.tooltip {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  margin-left: 8px;
+  margin-top: 2px;
+}
+
+.tooltip-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border: none;
+  background-color: #FFE17F;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+}
+
+.tooltip-text {
+  display: none;
+  width: 164px;
+  padding: 19px 17px 19px 19px;
+  font-family: Rubik, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #000000;
+  box-shadow: 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+
+  position: absolute;
+  top: 100%;
+  margin-top: 10px;
+  left: -142px;
+}
+
+.tooltip-text::after {
+  content: "";
+  width: 14px;
+  height: 6px;
+  background-image: url(/images/popver_triangle.svg);
+  position: absolute;
+  top: -6px;
+  right: 38px;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.form-label-icon {
+  position: relative;
+  padding-right: 26px;
+}
+
 /*cart popover*/
 
 .popover {
@@ -2292,6 +2343,10 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+}
+
+.popover-open {
+  display: block;
 }
 
 .popover-triangle {
